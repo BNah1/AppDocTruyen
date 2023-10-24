@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screenDangKy"
+    android:background="@drawable/backgroundDK"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký"
+        android:textStyle="bold"
+        android:textColor="#8F5066"
+        android:textAlignment="center"
+        android:textSize="100dp"
+        android:layout_marginTop="40dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/dangky_khung"
+        android:layout_width="match_parent"
+        android:layout_height="405dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="#CBEDAEAE"
+        >
+
+        <EditText
+            android:id="@+id/dangky_tentaikhoan"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_edit"
+            android:gravity="center"
+            android:text="Nhập tên tài khoản"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/dangky_matkhau"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_alignTop="@id/dangky_tentaikhoan"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/bg_edit"
+            android:gravity="center"
+            android:text="Nhập mật khẩu"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/dangky_nhaplaimatkhau"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_alignTop="@id/dangky_matkhau"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/bg_edit"
+            android:gravity="center"
+            android:text="Nhập lại mật khẩu"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/dangky_sdt"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_alignTop="@id/dangky_nhaplaimatkhau"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/bg_edit"
+            android:gravity="center"
+            android:text="Nhập số điện thoại"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/dangky_btxacnhan"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_alignTop="@id/dangky_sdt"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="-2dp"
+            android:text="Xác nhận"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

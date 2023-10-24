@@ -29,4 +29,12 @@
             />
     </RelativeLayout>
 
+    <GridView
+        android:id="@+id/gdvDSTruyen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:layout_marginLeft="10dp"
+        />
+
 </LinearLayout>

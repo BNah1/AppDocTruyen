@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="150dp">
+    <ImageView
+        android:id="@+id/imgAnhTruyen"
+        android:src="@drawable/item"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/txvSoChap"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#B7F1CECE"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:text="Chap 15" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txvTenTruyen"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:text="Dragonslade"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
