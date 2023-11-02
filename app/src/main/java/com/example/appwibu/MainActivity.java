@@ -2,8 +2,11 @@ package com.example.appwibu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.GridView;
+import android.widget.TextView;
 
 import com.example.appwibu.adapter.TruyenTranhAdapter;
 import com.example.appwibu.object.Truyen;
@@ -14,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
 GridView gdvDSTruyen;
 TruyenTranhAdapter adapter;
 ArrayList<Truyen> truyenArrayList;
+
+    TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +28,15 @@ ArrayList<Truyen> truyenArrayList;
         anhXa();
         setUp();
         setClick();
+        textView = findViewById(R.id.LLLLLL);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), screenDangNhap.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
     private void init(){
         truyenArrayList = new ArrayList<>();
