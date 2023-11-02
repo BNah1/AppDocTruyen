@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".screenDangKy"
-    android:background="@drawable/backgroundDK"
     android:gravity="center"
     >
 
@@ -22,81 +21,75 @@
         android:layout_marginTop="40dp"
         />
 
-    <RelativeLayout
-        android:id="@+id/dangky_khung"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="405dp"
+        android:layout_height="90dp"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="15dp"
         android:background="#CBEDAEAE"
         >
 
-        <EditText
-            android:id="@+id/dangky_tentaikhoan"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dangky_email"
             android:layout_width="350dp"
-            android:layout_height="55dp"
+            android:layout_height="80dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="15dp"
             android:layout_marginTop="25dp"
             android:background="@drawable/bg_edit"
             android:gravity="center"
-            android:text="Nhập tên tài khoản"
+            android:text="Nhập tên email"
             android:textColor="@color/white"
-            android:textSize="20dp" />
+            android:textSize="30dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-        <EditText
-            android:id="@+id/dangky_matkhau"
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="#CBEDAEAE"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dangky_password"
             android:layout_width="350dp"
-            android:layout_height="55dp"
-            android:layout_alignTop="@id/dangky_tentaikhoan"
+            android:layout_height="80dp"
+            android:layout_alignTop="@id/dangnhap_email"
             android:layout_marginStart="15dp"
             android:layout_marginTop="80dp"
             android:background="@drawable/bg_edit"
             android:gravity="center"
             android:text="Nhập mật khẩu"
             android:textColor="@color/white"
-            android:textSize="20dp" />
+            android:textSize="30dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-        <EditText
-            android:id="@+id/dangky_nhaplaimatkhau"
-            android:layout_width="350dp"
-            android:layout_height="55dp"
-            android:layout_alignTop="@id/dangky_matkhau"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="80dp"
-            android:background="@drawable/bg_edit"
-            android:gravity="center"
-            android:text="Nhập lại mật khẩu"
-            android:textColor="@color/white"
-            android:textSize="20dp" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
-        <EditText
-            android:id="@+id/dangky_sdt"
-            android:layout_width="350dp"
-            android:layout_height="55dp"
-            android:layout_alignTop="@id/dangky_nhaplaimatkhau"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="80dp"
-            android:background="@drawable/bg_edit"
-            android:gravity="center"
-            android:text="Nhập số điện thoại"
-            android:textColor="@color/white"
-            android:textSize="20dp" />
+    <Button
+        android:id="@+id/dangky_btxacnhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Xác nhận"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
 
-        <Button
-            android:id="@+id/dangky_btxacnhan"
-            android:layout_width="150dp"
-            android:layout_height="55dp"
-            android:layout_alignTop="@id/dangky_sdt"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="70dp"
-            android:layout_marginBottom="-2dp"
-            android:text="Xác nhận"
-            android:textColor="@color/white"
-            android:textSize="20dp" />
-    </RelativeLayout>
-
+    <TextView
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/loginNow"
+        android:text="Đăng nhập ngay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
