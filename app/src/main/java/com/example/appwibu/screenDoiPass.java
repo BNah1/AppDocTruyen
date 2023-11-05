@@ -36,7 +36,7 @@ public class screenDoiPass extends AppCompatActivity {
 
         buttonEdit.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 String pass = passwordET.getText().toString().trim();
                 String passNew = passwordETNew.getText().toString().trim();
                 if (TextUtils.isEmpty(pass)){
@@ -56,7 +56,6 @@ public class screenDoiPass extends AppCompatActivity {
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        //thành công thì update
                         user.updatePassword(passNew)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override

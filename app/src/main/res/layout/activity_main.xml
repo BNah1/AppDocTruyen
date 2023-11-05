@@ -33,14 +33,36 @@
     <GridView
         android:id="@+id/gdvDSTruyen"
         android:layout_width="match_parent"
-        android:layout_height="577dp"
+        android:layout_height="532dp"
         android:layout_marginLeft="10dp"
         android:numColumns="3" />
 
     <TextView
-        android:id="@+id/LLLLLL"
-        android:layout_width="match_parent"
+        android:id="@+id/user_ID"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DANGNHAP" />
+        android:text="xxxx"
+        android:textAlignment="center"
+        android:textColor="#8F5066"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/LLLLLL2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="doimk"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/LLLLLL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
 
 </LinearLayout>

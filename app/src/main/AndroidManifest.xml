@@ -15,16 +15,20 @@
         android:theme="@style/Theme.AppWibu"
         tools:targetApi="31">
         <activity
-            android:name=".screenDoiPass"
+            android:name=".doipass1"
             android:exported="false" />
         <activity
             android:name=".screenDangNhap"
-            android:exported="false"
-            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+            android:exported="false" />
         <activity
             android:name=".screenDangKy"
-            android:exported="false"
-            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+            android:exported="false" />
+        <activity
+            android:name=".screen_dangnhap"
+            android:exported="false" />
+        <activity
+            android:name=".screen_dangky"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
