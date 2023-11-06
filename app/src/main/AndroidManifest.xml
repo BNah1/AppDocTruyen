@@ -15,9 +15,6 @@
         android:theme="@style/Theme.AppWibu"
         tools:targetApi="31">
         <activity
-            android:name=".doipass1"
-            android:exported="false" />
-        <activity
             android:name=".screenDangNhap"
             android:exported="false" />
         <activity
